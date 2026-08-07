@@ -100,6 +100,11 @@ those metrics to be meaningful, and including them would have been more
 misleading than informative. The underlying queries are still included in
 the SQL file for reference.
 
+![Overview](dashboard_screenshots/1_overview.png)
+![Orders Analysis](dashboard_screenshots/2_orders_analysis.png)
+![Products Analysis](dashboard_screenshots/3_products_analysis.png)
+![Pharmacies Analysis](dashboard_screenshots/4_pharmacies_analysis.png)
+
 **Data model:** built on `orders_staging`, `orderitems`, `pharmacies`, and
 `orderstatetypes`, related through `PharmacyKey`/`Key` and `OrderId`/`Id`.
 Relationships are single-direction, many-to-one, matching the natural
@@ -107,6 +112,6 @@ grain of each table (many orders per pharmacy, many line items per order).
 
 ## Notes
 
-Raw data files are not included in this repository,
-as they contain operational business data.
-The SQL file and dashboard are structured so the project can be reproduced against any similarly-shaped dataset
+Raw data files are not included in this repository, as they contain
+operational business data. The SQL file and dashboard are structured so
+the project can be reproduced against any similarly-shaped dataset.
